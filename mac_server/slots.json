@@ -1,0 +1,36 @@
+{
+  "apps": {
+    "chrome": "Google Chrome",
+    "google chrome": "Google Chrome",
+    "safari": "Safari",
+    "firefox": "Firefox",
+    "keynote": "Keynote",
+    "powerpoint": "Microsoft PowerPoint",
+    "word": "Microsoft Word",
+    "excel": "Microsoft Excel",
+    "outlook": "Microsoft Outlook",
+    "slack": "Slack",
+    "zoom": "zoom.us",
+    "notes": "Notes",
+    "messages": "Messages",
+    "terminal": "Terminal",
+    "vscode": "Visual Studio Code",
+    "visual studio code": "Visual Studio Code"
+  },
+  "sites": {
+    "gmail": "https://mail.google.com",
+    "google mail": "https://mail.google.com",
+    "google docs": "https://docs.google.com",
+    "docs": "https://docs.google.com",
+    "slides": "https://slides.google.com",
+    "sheets": "https://sheets.google.com",
+    "drive": "https://drive.google.com",
+    "github": "https://github.com",
+    "notion": "https://www.notion.so",
+    "twitter": "https://twitter.com",
+    "x": "https://twitter.com",
+    "youtube": "https://www.youtube.com",
+    "calendar": "https://calendar.google.com",
+    "chatgpt": "https://chat.openai.com"
+  }
+}

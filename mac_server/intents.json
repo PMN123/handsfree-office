@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "version": "1.0",
+    "notes": "Non-LLM intent catalog with examples + regex. Patterns take priority; then keyword match; then TF-IDF."
+  },
+
+  "type_text": {
+    "examples": [
+      "type hello team meeting at 3 pm",
+      "write this down",
+      "dictate the following"
+    ],
+    "patterns": [
+      "(?i)^(type|write|dictate)\\s+(?P<text>.+)$"
+    ],
+    "slots": ["text"]
+  },
+
+  "open_gmail": {
+    "examples": ["open gmail", "go to gmail", "open my email", "open google mail"]
+  },
+
+  "send_email": {
+    "examples": ["send email", "send it", "send this"]
+  },
+
+  "open_url": {
+    "examples": ["open twitter.com", "go to github", "navigate to notion"],
+    "patterns": [
+      "(?i)^(open|go to|navigate to)\\s+(?P<url>[^\\s]+)$"
+    ],
+    "slots": ["url"]
+  },
+
+  "open_app": {
+    "examples": ["open chrome", "launch safari", "start keynote"],
+    "patterns": [
+      "(?i)^(open|launch|start)\\s+(?P<app>.+)$"
+    ],
+    "slots": ["app"]
+  },
+
+  "new_tab": {
+    "examples": ["new tab", "open a new tab", "create new tab"]
+  },
+  "close_tab": {
+    "examples": ["close tab", "close this tab"]
+  },
+  "next_tab": {
+    "examples": ["next tab", "switch to next tab"]
+  },
+  "previous_tab": {
+    "examples": ["previous tab", "switch to previous tab", "go back a tab"]
+  },
+  "reload_tab": {
+    "examples": ["reload", "refresh", "reload tab", "refresh page"]
+  },
+
+  "scroll_down": {
+    "examples": ["scroll down", "down a bit", "page down", "next"]
+  },
+  "scroll_up": {
+    "examples": ["scroll up", "up a bit", "page up"]
+  },
+  "scroll_top": {
+    "examples": ["go to top", "scroll to top", "top of page"]
+  },
+  "scroll_bottom": {
+    "examples": ["go to bottom", "scroll to bottom", "end of page"]
+  },
+
+  "tab_key": {
+    "examples": ["tab", "press tab", "next field"]
+  },
+  "shift_tab_key": {
+    "examples": ["shift tab", "previous field", "go back a field"]
+  },
+
+  "enter_key": {
+    "examples": ["press enter", "hit return", "confirm"]
+  },
+  "escape_key": {
+    "examples": ["press escape", "cancel", "dismiss"]
+  },
+
+  "backspace": {
+    "examples": ["backspace", "delete previous", "erase left"]
+  },
+  "delete_forward": {
+    "examples": ["delete", "delete forward", "erase right"]
+  },
+
+  "select_all": {
+    "examples": ["select all", "highlight all"]
+  },
+  "copy": {
+    "examples": ["copy", "copy selection", "cmd c"]
+  },
+  "paste": {
+    "examples": ["paste", "cmd v"]
+  },
+  "cut": {
+    "examples": ["cut", "cmd x"]
+  },
+  "undo": {
+    "examples": ["undo", "go back", "cmd z"]
+  },
+  "redo": {
+    "examples": ["redo", "cmd shift z"]
+  },
+
+  "bold": {
+    "examples": ["bold", "toggle bold", "make it bold"]
+  },
+  "italic": {
+    "examples": ["italic", "toggle italic", "make it italic"]
+  },
+  "underline": {
+    "examples": ["underline", "toggle underline"]
+  },
+
+  "find": {
+    "examples": ["find", "search on page", "find in page"]
+  },
+  "find_next": {
+    "examples": ["find next", "next result"]
+  },
+  "find_previous": {
+    "examples": ["find previous", "previous result"]
+  },
+
+  "arrow_left":  { "examples": ["left", "move left"] },
+  "arrow_right": { "examples": ["right", "move right"] },
+  "arrow_up":    { "examples": ["up", "move up"] },
+  "arrow_down":  { "examples": ["down", "move down"] },
+
+  "word_left": {
+    "examples": ["word left", "jump left word"]
+  },
+  "word_right": {
+    "examples": ["word right", "jump right word"]
+  },
+  "line_start": {
+    "examples": ["line start", "go to line start", "home"]
+  },
+  "line_end": {
+    "examples": ["line end", "go to line end", "end"]
+  },
+
+  "zoom_in": {
+    "examples": ["zoom in", "increase zoom", "bigger"]
+  },
+  "zoom_out": {
+    "examples": ["zoom out", "decrease zoom", "smaller"]
+  },
+  "zoom_reset": {
+    "examples": ["reset zoom", "actual size", "default zoom"]
+  },
+
+  "start_presentation": {
+    "examples": ["open presentation", "start presentation", "begin slideshow", "play slides"]
+  },
+  "exit_presentation": {
+    "examples": ["exit presentation", "stop slideshow", "end slideshow"]
+  },
+  "next_slide": {
+    "examples": ["next slide", "advance slide", "go forward"]
+  },
+  "previous_slide": {
+    "examples": ["previous slide", "back one", "go back slide"]
+  },
+  "first_slide": {
+    "examples": ["first slide", "go to first slide"]
+  },
+  "last_slide": {
+    "examples": ["last slide", "go to last slide"]
+  },
+
+  "new_window": {
+    "examples": ["new window", "open new window"]
+  },
+  "close_window": {
+    "examples": ["close window", "close this window"]
+  },
+  "minimize_window": {
+    "examples": ["minimize window", "hide window"]
+  },
+  "switch_app": {
+    "examples": ["switch app", "next app", "app switcher"]
+  },
+
+  "repeat_last": {
+    "examples": ["do that again", "repeat", "repeat last"]
+  }
+  ,
+"new_email": {
+  "examples": ["new email", "compose email", "start a draft", "new message"]
+},
+"compose_email_to": {
+  "examples": ["compose email to alice", "email bob at example dot com"],
+  "patterns": [
+    "(?i)^(compose|email|mail|send)\\s+(?:an?\\s+)?(?:email|mail|message)?\\s*to\\s+(?P<to>.+)$"
+  ],
+  "slots": ["to"]
+},
+"compose_email_full": {
+  "examples": ["compose to alice subject hello body hi there"],
+  "patterns": [
+    "(?i)^compose\\s+(?:email\\s+)?to\\s+(?P<to>[^\\s]+(?:\\s+[^\\s]+)*)\\s+subject\\s+(?P<subject>[^\\s].*?)\\s+body\\s+(?P<body>.+)$"
+  ],
+  "slots": ["to", "subject", "body"]
+}
+}

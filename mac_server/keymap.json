@@ -1,0 +1,74 @@
+{
+  "open_gmail":       { "type": "applescript_gmail_compose" },
+  "send_email":       { "type": "hotkey", "keys": ["command", "enter"] },
+
+  "open_url":         { "type": "applescript_open_url" },
+  "open_app":         { "type": "applescript_open_app" },
+
+  "new_tab":          { "type": "hotkey", "keys": ["command", "t"] },
+  "close_tab":        { "type": "hotkey", "keys": ["command", "w"] },
+  "next_tab":         { "type": "hotkey", "keys": ["control", "tab"] },
+  "previous_tab":     { "type": "hotkey", "keys": ["control", "shift", "tab"] },
+  "reload_tab":       { "type": "hotkey", "keys": ["command", "r"] },
+
+  "scroll_down":      { "type": "scroll", "amount": -600 },
+  "scroll_up":        { "type": "scroll", "amount": 600 },
+  "scroll_top":       { "type": "hotkey", "keys": ["fn", "left"] },
+  "scroll_bottom":    { "type": "hotkey", "keys": ["fn", "right"] },
+
+  "tab_key":          { "type": "key", "key": "tab" },
+  "shift_tab_key":    { "type": "hotkey", "keys": ["shift", "tab"] },
+
+  "enter_key":        { "type": "key", "key": "enter" },
+  "escape_key":       { "type": "key", "key": "esc" },
+
+  "backspace":        { "type": "key", "key": "backspace" },
+  "delete_forward":   { "type": "key", "key": "delete" },
+
+  "select_all":       { "type": "hotkey", "keys": ["command", "a"] },
+  "copy":             { "type": "hotkey", "keys": ["command", "c"] },
+  "paste":            { "type": "hotkey", "keys": ["command", "v"] },
+  "cut":              { "type": "hotkey", "keys": ["command", "x"] },
+  "undo":             { "type": "hotkey", "keys": ["command", "z"] },
+  "redo":             { "type": "hotkey", "keys": ["command", "shift", "z"] },
+
+  "bold":             { "type": "hotkey", "keys": ["command", "b"] },
+  "italic":           { "type": "hotkey", "keys": ["command", "i"] },
+  "underline":        { "type": "hotkey", "keys": ["command", "u"] },
+
+  "find":             { "type": "hotkey", "keys": ["command", "f"] },
+  "find_next":        { "type": "hotkey", "keys": ["command", "g"] },
+  "find_previous":    { "type": "hotkey", "keys": ["command", "shift", "g"] },
+
+  "arrow_left":       { "type": "key", "key": "left" },
+  "arrow_right":      { "type": "key", "key": "right" },
+  "arrow_up":         { "type": "key", "key": "up" },
+  "arrow_down":       { "type": "key", "key": "down" },
+
+  "word_left":        { "type": "hotkey", "keys": ["option", "left"] },
+  "word_right":       { "type": "hotkey", "keys": ["option", "right"] },
+  "line_start":       { "type": "hotkey", "keys": ["command", "left"] },
+  "line_end":         { "type": "hotkey", "keys": ["command", "right"] },
+
+  "zoom_in":          { "type": "hotkey", "keys": ["command", "plus"] },
+  "zoom_out":         { "type": "hotkey", "keys": ["command", "minus"] },
+  "zoom_reset":       { "type": "hotkey", "keys": ["command", "0"] },
+
+  "start_presentation": { "type": "applescript_keynote_start" },
+  "exit_presentation":  { "type": "key", "key": "esc" },
+  "next_slide":         { "type": "key", "key": "right" },
+  "previous_slide":     { "type": "key", "key": "left" },
+  "first_slide":        { "type": "hotkey", "keys": ["home"] },
+  "last_slide":         { "type": "hotkey", "keys": ["end"] },
+
+  "new_window":       { "type": "hotkey", "keys": ["command", "n"] },
+  "close_window":     { "type": "hotkey", "keys": ["command", "w"] },
+  "minimize_window":  { "type": "hotkey", "keys": ["command", "m"] },
+  "switch_app":       { "type": "hotkey", "keys": ["command", "tab"] },
+
+  "repeat_last":      { "type": "repeat_last" }
+  ,
+"new_email":           { "type": "hotkey", "keys": ["c"] },
+"compose_email_to":    { "type": "mailto_compose" },
+"compose_email_full":  { "type": "mailto_compose" }
+}
